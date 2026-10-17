@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Portfolio</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <a href="#" class="logo">Port<span>folio</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Ranjan Kumar Yadav</h1>
+            <h3>And I'm a <span class="typing-text">Frontend Developer</span></h3>
+            <p>I am a passionate web developer focused on creating clean, modern, and user-friendly websites with smooth animations and responsive designs.</p>
+            
+            <div class="btn-box">
+                <a href="#contact" class="btn">Hire Me</a>
+                <!-- Download CV Button -->
+                <a href="resume.pdf" download="My_CV.pdf" class="btn cv-btn">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <img src="my pic.jpeg" alt="Profile">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <h3>Frontend Developer & Designer</h3>
+                <p>I have built numerous responsive web applications using HTML5, CSS3, JavaScript, and modern frameworks. I love turning complex problems into simple, beautiful, and intuitive designs.</p>
+                <div class="skills">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-card">
+                <i class="fa-solid fa-laptop-code">></i>
+                <h3>E-Commerce Website</h3>
+                <p>A fully responsive online shopping store built with HTML, CSS, and JS.</p>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <h3>Weather App</h3>
+                <p>Real-time weather forecasting app using public APIs and JavaScript.</p>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Portfolio Template</h3>
+                <p>Modern dark-themed developer portfolio with smooth scroll effects.</p>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#" onsubmit="handleForm(event)">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ranjan &hearts;. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
